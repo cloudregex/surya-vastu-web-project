@@ -1,0 +1,1 @@
+"use strict";(()=>{window.addEventListener("scroll",t);var e=document.getElementById("sidebar"),s=e.offsetTop;function t(){window.scrollY>=75?e.classList.add("sticky-pin"):e.classList.remove("sticky-pin")}window.addEventListener("scroll",t),window.addEventListener("DOMContentLoaded",t)})();

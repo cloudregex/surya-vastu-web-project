@@ -10,6 +10,11 @@
                             <i class="fa fa-home fa-4x text-primary mb-4 d-none d-sm-block"></i>
                             <h5 class="text-white text-uppercase">Creating Harmonious Spaces</h5>
                             <h1 class="display-3 text-uppercase text-white mb-md-4">Transform Your Space with Vastu Wisdom</h1>
+                            <!-- Indicators -->
+                            <div class="d-flex justify-content-center gap-2 mb-3">
+                                <div class="indicator active"></div>
+                                <div class="indicator"></div>
+                            </div>
                             <a href="#quote" class="btn btn-primary py-md-3 px-md-5 mt-2">Get A Quote</a>
                         </div>
                     </div>
@@ -20,21 +25,25 @@
                         <div class="p-3" style="max-width: 900px;">
                             <i class="fa fa-tools fa-4x text-primary mb-4 d-none d-sm-block"></i>
                             <h1 class="display-3 text-uppercase text-white mb-md-4">Shaping the Future, Today</h1>
-
-                            <a href="{{ route('contact-us') }}" class="btn btn-primary py-md-3 px-md-5 mt-2">Contact
-                                Us</a>
+                            <!-- Indicators -->
+                            <div class="d-flex justify-content-center gap-2 mb-3">
+                                <div class="indicator"></div>
+                                <div class="indicator active"></div>
+                            </div>
+                            <a href="{{ route('contact-us') }}" class="btn btn-primary py-md-3 px-md-5 mt-2">Contact Us</a>
                         </div>
                     </div>
                 </div>
             </div>
-            {{-- <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel" data-bs-slide="prev">
+            <!-- Navigation Buttons -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
             <button class="carousel-control-next" type="button" data-bs-target="#header-carousel" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
-            </button> --}}
+            </button>
         </div>
     </div>
     <!-- Carousel End -->
@@ -392,3 +401,4 @@
     <!-- Contact Info End -->
 
 </div>
+ 

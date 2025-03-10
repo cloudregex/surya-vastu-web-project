@@ -52,8 +52,8 @@
         input,
         a,
         button,
-        label {
-            font-family: "Sora", serif;
+        label, small {
+            font-family: "Sora", serif !important;
             font-weight: 400;
             font-style: normal;
         }
@@ -70,10 +70,67 @@
         .top-60 {
             top: 80% !important;
         }
+
+       
+    /* Add indicator styles */
+    .indicator {
+        width: 10px;
+        height: 10px;
+        background-color: rgba(255, 255, 255, 0.5);
+        border-radius: 50%;
+        transition: background-color 0.3s ease;
+    }
+
+    .indicator.active {
+        background-color: #fff;
+    }
+  /* Add indicator styles */
+  .indicator {
+        width: 10px;
+        height: 10px;
+        background-color: rgba(255, 255, 255, 0.5);
+        border-radius: 50%;
+        transition: background-color 0.3s ease;
+    }
+
+    .indicator.active {
+        background-color: #fff;
+    }
+
+    /* Customize navigation buttons */
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 5%;
+        border-radius: 5px;
+        opacity: 0.8;
+        transition: opacity 0.3s ease;
+        color:white;
+    }
+
+    .carousel-control-prev:hover,
+    .carousel-control-next:hover {
+        opacity: 1;
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        filter: invert(1);
+        color: white !important;
+    }
     </style>
 </head>
 
 <body>
+    <!-- Loader -->
+    <div id="loader">
+        <img src="{{ asset('website/img/logo.jpg') }}" alt="Surya Vastu">
+        <div class="loader-text">
+            <h5>Surya Vastu</h5>
+            <small>Vastu Consultant</small>
+        </div>
+        <div class="loading-line"></div>
+    </div>
+
     <!-- Topbar Start -->
     <div class="container-fluid px-5 d-none d-lg-block">
         <div class="row gx-5">
@@ -301,6 +358,11 @@
                     onClick: function() {} // Callback after click
                 }).showToast();
             });
+        });
+
+        // Hide loader when page is fully loaded
+        window.addEventListener('load', function() {
+            document.getElementById('loader').style.display = 'none';
         });
     </script>
 </body>

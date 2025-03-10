@@ -8,8 +8,8 @@
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                         <div class="p-3" style="max-width: 900px;">
                             <i class="fa fa-home fa-4x text-primary mb-4 d-none d-sm-block"></i>
-                            <h5 class="text-white text-uppercase">Building Excellence</h5>
-                            <h1 class="display-3  text-white text-uppercase mb-md-4">PNP Infra Projects</h1>
+                            <h5 class="text-white text-uppercase">Creating Harmonious Spaces</h5>
+                            <h1 class="display-3 text-uppercase text-white mb-md-4">Transform Your Space with Vastu Wisdom</h1>
                             <a href="#quote" class="btn btn-primary py-md-3 px-md-5 mt-2">Get A Quote</a>
                         </div>
                     </div>
@@ -44,33 +44,27 @@
     <div class="container-fluid py-5 px-sm-5">
         <div class="row g-5">
             <div class="col-lg-7">
-                <h1 class="display-5 text-uppercase mb-4">We are <span class="text-primary">the Leaders</span> in
-                    Infrastructure Development</h1>
-                <h4 class="text-uppercase mb-3 text-body">Delivering Excellence in Construction and Infrastructure
-                    Projects Since 2010</h4>
-                <p>At PNP Infra Projects, we specialize in delivering high-quality infrastructure solutions that stand
-                    the test of time. Our commitment to excellence and innovation has made us a trusted name in the
-                    construction industry.</p>
+                <h1 class="display-5 text-uppercase mb-4">We are <span class="text-primary">the Experts</span> in
+                    Vastu Consultation</h1>
+                <h4 class="text-uppercase mb-3 text-body">Creating Harmonious Living and Working Spaces</h4>
+                <p>At Surya Vastu, we combine ancient Vastu principles with modern architectural solutions to create spaces that promote positivity, prosperity, and well-being. Our expertise in Vastu Shastra has helped numerous clients achieve balance in their lives.</p>
                 <div class="row gx-5 py-2">
                     <div class="col-sm-6 mb-2">
-                        <p class="fw-bold mb-2"><i class="fa fa-check text-primary me-3"></i>Expert Project Planning</p>
-                        <p class="fw-bold mb-2"><i class="fa fa-check text-primary me-3"></i>Skilled Engineering Team
-                        </p>
-                        <p class="fw-bold mb-2"><i class="fa fa-check text-primary me-3"></i>Quality Construction</p>
+                        <p class="fw-bold mb-2"><i class="fa fa-check text-primary me-3"></i>Expert Vastu Analysis</p>
+                        <p class="fw-bold mb-2"><i class="fa fa-check text-primary me-3"></i>Space Optimization</p>
+                        <p class="fw-bold mb-2"><i class="fa fa-check text-primary me-3"></i>Energy Flow Enhancement</p>
                     </div>
                     <div class="col-sm-6 mb-2">
-                        <p class="fw-bold mb-2"><i class="fa fa-check text-primary me-3"></i>Timely Delivery</p>
-                        <p class="fw-bold mb-2"><i class="fa fa-check text-primary me-3"></i>Safety Compliance</p>
-                        <p class="fw-bold mb-2"><i class="fa fa-check text-primary me-3"></i>Cost Effectiveness</p>
+                        <p class="fw-bold mb-2"><i class="fa fa-check text-primary me-3"></i>Architectural Solutions</p>
+                        <p class="fw-bold mb-2"><i class="fa fa-check text-primary me-3"></i>Personalized Consultations</p>
+                        <p class="fw-bold mb-2"><i class="fa fa-check text-primary me-3"></i>Remedial Measures</p>
                     </div>
                 </div>
-                <p class="mb-4">With over a decade of experience, we have successfully completed numerous projects
-                    across residential, commercial, and industrial sectors. Our team of experts ensures that every
-                    project meets the highest standards of quality and safety.</p>
+                <p class="mb-4">With a deep understanding of Vastu principles and their practical applications, we provide customized solutions for homes, offices, and commercial spaces. Our approach ensures that every space we work on radiates positive energy and supports your goals.</p>
             </div>
             <div class="col-lg-5 pb-5" style="min-height: 400px;">
                 <div class="position-relative bg-dark-radial h-100 ms-5">
-                    <img class="position-absolute w-100 h-100 mt-5 ms-n5" src="{{ asset('website/img/about.jpg') }}"
+                    <img class="position-absolute w-100 mt-5 ms-n5" src="{{ asset('website/img/about.jpg') }}"
                         style="object-fit: cover;">
                 </div>
             </div>
@@ -79,7 +73,7 @@
     <!-- About End -->
 
     <!-- Services Start -->
-    <div class="container-fluid bg-light py-6 px-sm-5">
+    <div class="container-fluid bg-light py-6 px-sm-5 mt-5">
         <div class="text-center mx-auto mb-5" style="max-width: 600px;">
             <h1 class="display-5 text-uppercase mb-4">Our <span class="text-primary">Services</span></h1>
         </div>
@@ -111,8 +105,7 @@
                 <div class="mb-4">
                     <h1 class="display-5 text-uppercase mb-4">Get A <span class="text-primary">Quote</span></h1>
                 </div>
-                <p class="mb-5">Request a detailed quote for your construction project. Our team will analyze your
-                    requirements and provide a comprehensive cost estimation along with project timeline.</p>
+                <p class="mb-5">Request a personalized Vastu consultation for your space. Our experts will analyze your requirements and provide tailored solutions to enhance the energy flow and harmony in your environment.</p>
                 <a class="btn btn-primary py-3 px-sm-5" href="{{ route('contact-us') }}">Contact Us</a>
             </div>
             <div class="col-lg-8 col-12">
@@ -142,12 +135,12 @@
                             </div>
                             <div class="col-12 col-sm-6">
                                 <select class="form-select border-0" wire:model="project_type" style="height: 55px;">
-                                    <option value="">Select Project Type *</option>
-                                    <option value="Commercial">Commercial Construction</option>
-                                    <option value="Residential">Residential Project</option>
-                                    <option value="Industrial">Industrial Project</option>
-                                    <option value="Infrastructure">Infrastructure Development</option>
-                                    <option value="Renovation">Renovation</option>
+                                    <option value="">Select Service Type *</option>
+                                    <option value="Residential">Residential Vastu</option>
+                                    <option value="Commercial">Commercial Vastu</option>
+                                    <option value="Industrial">Industrial Vastu</option>
+                                    <option value="Land">Land Vastu</option>
+                                    <option value="Renovation">Vastu for Renovation</option>
                                 </select>
                                 @error('project_type')
                                     <span class="text-danger">{{ $message }}</span>
@@ -285,7 +278,7 @@
         </div>
         <div class="row gx-0 align-items-center">
             <div class="col-xl-4 col-lg-5 d-none d-lg-block">
-                <img class="img-fluid w-100 h-100" src="{{ asset('website/img/testimonial.jpg') }}">
+                <img class="img-fluid w-100 h-100" src="{{ asset('website/img/about.jpg') }}">
             </div>
             <div class="col-xl-8 col-lg-7 col-md-12">
                 <div class="testimonial bg-light">
@@ -359,11 +352,9 @@
                 <div class="bg-white p-5 h-100">
                     <i class="fa fa-map-marker-alt fa-3x text-primary mb-3"></i>
                     <h3 class="text-uppercase">Our Office</h3>
-                    <p class="m-0">FLAT NO. B-1, Sunrise Apartment,</p>
-                    <p class="m-0">SR NO 46/3, Bombay shopper,</p>
-                    <p class="m-0">Wadgaon Seri, PUNE- 411014</p>
+                    <p class="m-0">Baramati, Pandare, Maharashtra 413110</p>
                     <p class="mt-3 m-0"><strong>Email:</strong></p>
-                    <p class="m-0">pnpinfraprojects@gmail.com</p>
+                    <p class="m-0">suryavastu6147@gmail.com</p>
                 </div>
             </div>
             <div class="col-lg-6 col-md-6">
@@ -371,17 +362,19 @@
                     <i class="fa fa-phone-alt fa-3x text-primary mb-3"></i>
                     <h3 class="text-uppercase">Contact Details</h3>
                     <p class="m-0"><strong>Phone:</strong></p>
-                    <p class="m-0">+91 7387747503</p>
-                    <p class="m-0">+91 9850029403</p>
-                    <p class="m-0">+91 8600549090</p>
+                    <p class="m-0"><a href="tel:+918087316147" class="text-body">+91 8087316147</a></p>
+                    <a href="tel:+918087316147" class="btn btn-primary btn-sm mt-2">Call Now</a>
                 </div>
             </div>
             <div class="col-lg-6 col-md-6">
                 <div class="bg-white p-5 h-100">
-                    <i class="fa fa-id-card fa-3x text-primary mb-3"></i>
-                    <h3 class="text-uppercase">GST Details</h3>
-                    <p class="m-0">GST: PNP Infra Projects</p>
-                    <p class="m-0">GSTIN: 27AAHFP6682Q1ZV</p>
+                    <i class="fa fa-share-alt fa-3x text-primary mb-3"></i>
+                    <h3 class="text-uppercase">Follow Us</h3>
+                    <div class="d-flex justify-content-start">
+                        <a href="https://www.facebook.com/share/15uroGRxhY/" class="btn btn-primary btn-lg-square rounded-0 me-2 d-flex align-items-center justify-content-center"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://g.page/r/CfkZJ6GvYSJBEBM/review" class="btn btn-primary btn-lg-square rounded-0 me-2 d-flex align-items-center justify-content-center"><i class="fab fa-google"></i></a>
+                        <a href="https://www.instagram.com/_suryavastu_6147/" class="btn btn-primary btn-lg-square rounded-0 d-flex align-items-center justify-content-center"><i class="fab fa-instagram"></i></a>
+                    </div>
                 </div>
             </div>
             <div class="col-lg-6 col-md-6">
@@ -393,6 +386,7 @@
                     <p class="m-0">Sunday: Closed</p>
                 </div>
             </div>
+            
         </div>
     </div>
     <!-- Contact Info End -->

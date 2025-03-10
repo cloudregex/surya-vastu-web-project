@@ -1,0 +1,79 @@
+<?php
+
+namespace App\Livewire\Website;
+
+use App\Models\Blog;
+use App\Models\Project;
+use App\Models\Quote;
+use App\Models\Service;
+use App\Models\Team;
+use App\Models\Testimonial;
+use Livewire\Attributes\Layout;
+use Livewire\Attributes\Title;
+use Livewire\Component;
+
+class Index extends Component
+{
+    #[Layout('livewire.website.layouts.website')]
+    #[Title('Home')]
+
+    public $full_name;
+    public $email;
+    public $phone;
+    public $project_type;
+    public $project_location;
+    public $estimated_budget;
+    public $expected_timeline;
+    public $project_description;
+
+    protected $rules = [
+        'full_name' => 'required',
+        'email' => 'required|email',
+        'phone' => 'required',
+        'project_type' => 'required',
+        'project_location' => 'required',
+        'project_description' => 'required',
+        'estimated_budget' => 'required',
+        'expected_timeline' => 'required',
+    ];
+
+    public function submitForm()
+    {
+        $this->validate();
+
+        Quote::create([
+            'full_name' => $this->full_name,
+            'email' => $this->email,
+            'phone' => $this->phone,
+            'project_type' => $this->project_type,
+            'project_location' => $this->project_location,
+            'estimated_budget' => $this->estimated_budget,
+            'expected_timeline' => $this->expected_timeline,
+            'project_description' => $this->project_description,
+        ]);
+
+        $this->dispatch('showToast', [
+            'type' => 'success',
+            'message' => 'Quote request submitted successfully!'
+        ]);
+
+        $this->reset();
+    }
+
+
+    public function render()
+    {
+        $testimonials = Testimonial::all();
+        $blogs = Blog::latest()->take(3)->get();
+        $projects = Project::latest()->paginate(9);
+        $teams = Team::latest()->paginate(8);
+        $services = Service::all();
+        return view('livewire.website.index', [
+            'testimonials' => $testimonials,
+            'blogs' => $blogs,
+            'projects' => $projects,
+            'teams' => $teams,
+            'services' => $services
+        ]);
+    }
+}

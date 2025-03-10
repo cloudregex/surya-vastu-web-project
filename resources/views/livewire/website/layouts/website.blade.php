@@ -12,7 +12,7 @@
     @livewireStyles
 
     <!-- Favicon -->
-    <link href="{{ asset('website/img/favicon.ico') }}" rel="icon">
+    <link href="{{ asset('website/favicon/favicon.png') }}" rel="icon">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -63,7 +63,7 @@
         h3,
         h4,
         h5,
-        h6 {
+        h6, .text-primary {
             font-weight: 600;
         }
 
@@ -72,51 +72,7 @@
         }
 
        
-    /* Add indicator styles */
-    .indicator {
-        width: 10px;
-        height: 10px;
-        background-color: rgba(255, 255, 255, 0.5);
-        border-radius: 50%;
-        transition: background-color 0.3s ease;
-    }
-
-    .indicator.active {
-        background-color: #fff;
-    }
-  /* Add indicator styles */
-  .indicator {
-        width: 10px;
-        height: 10px;
-        background-color: rgba(255, 255, 255, 0.5);
-        border-radius: 50%;
-        transition: background-color 0.3s ease;
-    }
-
-    .indicator.active {
-        background-color: #fff;
-    }
-
-    /* Customize navigation buttons */
-    .carousel-control-prev,
-    .carousel-control-next {
-        width: 5%;
-        border-radius: 5px;
-        opacity: 0.8;
-        transition: opacity 0.3s ease;
-        color:white;
-    }
-
-    .carousel-control-prev:hover,
-    .carousel-control-next:hover {
-        opacity: 1;
-    }
-
-    .carousel-control-prev-icon,
-    .carousel-control-next-icon {
-        filter: invert(1);
-        color: white !important;
-    }
+ 
     </style>
 </head>
 
@@ -180,7 +136,7 @@
 
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                <span class="navbar-toggler-icon"></span>
+                <i class="bi bi-list-nested text-warning"></i>
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav ms-auto py-0">

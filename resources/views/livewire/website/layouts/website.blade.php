@@ -189,9 +189,9 @@
                     <a href="{{ route('about-us') }}"
                         class="nav-item nav-link {{ request()->routeIs('about-us*') ? 'active' : '' }}">About</a>
                     <a href="{{ route('services') }}"
-                        class="nav-item nav-link {{ request()->routeIs('services*') ? 'active' : '' }}">Services</a>
+                        class="nav-item nav-link {{ request()->routeIs('services*') || request()->routeIs('service-details') ? 'active' : '' }}">Services</a>
                     <a href="{{ route('projects') }}"
-                        class="nav-item nav-link {{ request()->routeIs('projects*') ? 'active' : '' }}">Projects</a>
+                        class="nav-item nav-link {{ request()->routeIs('projects*') || request()->routeIs('project-details') ? 'active' : '' }}">Projects</a>
                     <a href="{{ route('gallery') }}"
                         class="nav-item nav-link {{ request()->routeIs('gallery*') ? 'active' : '' }}">Gallery</a>
                     <!-- <a href="{{ route('team') }}"

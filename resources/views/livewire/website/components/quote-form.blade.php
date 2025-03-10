@@ -55,39 +55,11 @@
                 <span class="text-danger">{{ $message }}</span>
             @enderror
         </div>
-        <div class="col-md-6">
-            <label for="estimated_budget" class="form-label">Estimated Budget *</label>
-            <select class="form-select @error('estimated_budget') is-invalid @enderror"
-                wire:model.defer="estimated_budget" id="estimated_budget">
-                <option value="">Estimated Budget</option>
-                <option value="Below 50L">Below 50 Lakhs</option>
-                <option value="50L-1Cr">50 Lakhs - 1 Crore</option>
-                <option value="1Cr-5Cr">1 Crore - 5 Crore</option>
-                <option value="Above 5Cr">Above 5 Crore</option>
-            </select>
-            @error('estimated_budget')
-                <span class="text-danger">{{ $message }}</span>
-            @enderror
-        </div>
-        <div class="col-6">
-            <label for="expected_timeline" class="form-label">Expected Timeline *</label>
-            <select class="form-select @error('expected_timeline') is-invalid @enderror"
-                wire:model.defer="expected_timeline" id="expected_timeline">
-                <option value="">Expected Timeline</option>
-                <option value="3-6 months">3-6 months</option>
-                <option value="6-12 months">6-12 months</option>
-                <option value="1-2 years">1-2 years</option>
-                <option value="2+ years">More than 2 years</option>
-            </select>
-            @error('expected_timeline')
-                <span class="text-danger">{{ $message }}</span>
-            @enderror
-        </div>
     </div>
 
     <div class="mt-4">
         <button type="submit" class="btn btn-primary" wire:loading.attr="disabled">
-            <span wire:loading wire:target="submitForm">
+            <span wire:loading wire:target="submit">
                 <i class="fas fa-spinner fa-spin"></i>
             </span>
             Submit Quote Request

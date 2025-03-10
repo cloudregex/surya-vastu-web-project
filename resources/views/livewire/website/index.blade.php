@@ -155,36 +155,10 @@
                                     <span class="text-danger">{{ $message }}</span>
                                 @enderror
                             </div>
-                            <div class="col-12 col-sm-6">
+                            <div class="col-12 col-sm-12">
                                 <input type="text" class="form-control border-0" wire:model="project_location"
                                     placeholder="Project Location *" style="height: 55px;">
                                 @error('project_location')
-                                    <span class="text-danger">{{ $message }}</span>
-                                @enderror
-                            </div>
-                            <div class="col-12 col-sm-6">
-                                <select class="form-select border-0" wire:model="estimated_budget"
-                                    style="height: 55px;">
-                                    <option value="">Estimated Budget</option>
-                                    <option value="Below 50L">Below 50 Lakhs</option>
-                                    <option value="50L-1Cr">50 Lakhs - 1 Crore</option>
-                                    <option value="1Cr-5Cr">1 Crore - 5 Crore</option>
-                                    <option value="Above 5Cr">Above 5 Crore</option>
-                                </select>
-                                @error('estimated_budget')
-                                    <span class="text-danger badge">{{ $message }}</span>
-                                @enderror
-                            </div>
-                            <div class="col-12">
-                                <select class="form-select border-0" wire:model="expected_timeline"
-                                    style="height: 55px;">
-                                    <option value="">Expected Timeline</option>
-                                    <option value="3-6 months">3-6 months</option>
-                                    <option value="6-12 months">6-12 months</option>
-                                    <option value="1-2 years">1-2 years</option>
-                                    <option value="2+ years">More than 2 years</option>
-                                </select>
-                                @error('expected_timeline')
                                     <span class="text-danger">{{ $message }}</span>
                                 @enderror
                             </div>

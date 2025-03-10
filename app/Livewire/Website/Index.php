@@ -22,8 +22,6 @@ class Index extends Component
     public $phone;
     public $project_type;
     public $project_location;
-    public $estimated_budget;
-    public $expected_timeline;
     public $project_description;
 
     protected $rules = [
@@ -33,8 +31,6 @@ class Index extends Component
         'project_type' => 'required',
         'project_location' => 'required',
         'project_description' => 'required',
-        'estimated_budget' => 'required',
-        'expected_timeline' => 'required',
     ];
 
     public function submitForm()
@@ -47,8 +43,6 @@ class Index extends Component
             'phone' => $this->phone,
             'project_type' => $this->project_type,
             'project_location' => $this->project_location,
-            'estimated_budget' => $this->estimated_budget,
-            'expected_timeline' => $this->expected_timeline,
             'project_description' => $this->project_description,
         ]);
 

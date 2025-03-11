@@ -29,7 +29,8 @@
                                 <div class="indicator"></div>
                                 <div class="indicator active"></div>
                             </div>
-                            <a href="{{ route('contact-us') }}" class="btn btn-primary py-md-3 px-md-5 mt-2">Contact Us</a>
+                            <a href="{{ route('contact-us') }}" class="btn btn-primary py-md-3 px-md-5 mt-2">Contact
+                                Us</a>
                         </div>
                     </div>
                 </div>
@@ -52,10 +53,13 @@
     <div class="container-fluid py-5 px-sm-5">
         <div class="row">
             <div class="col-lg-7">
-                <h1 class="display-5 text-uppercase mb-4">Expert <span class="text-primary">Vastu</span> Consultation</h1>
+                <h1 class="display-5 text-uppercase mb-4">Expert <span class="text-primary">Vastu</span> Consultation
+                </h1>
                 <h4 class="text-uppercase mb-3 text-body">Creating Harmonious Living and Working Spaces</h4>
-                <p>At Surya Vastu, we combine ancient Vastu principles with modern architectural solutions to create spaces that promote positivity, prosperity, and well-being. Our expertise in Vastu Shastra has helped numerous clients achieve balance in their lives.</p>
-                <div class="row gx-5 py-2">
+                <p>At Surya Vastu, we combine ancient Vastu principles with modern architectural solutions to create
+                    spaces that promote positivity, prosperity, and well-being. Our expertise in Vastu Shastra has
+                    helped numerous clients achieve balance in their lives.</p>
+                <div class="row  py-2">
                     <div class="col-sm-6 mb-2">
                         <p class="fw-bold mb-2"><i class="fa fa-check text-primary me-3"></i>Expert Vastu Analysis</p>
                         <p class="fw-bold mb-2"><i class="fa fa-check text-primary me-3"></i>Space Optimization</p>
@@ -63,11 +67,14 @@
                     </div>
                     <div class="col-sm-6 mb-2">
                         <p class="fw-bold mb-2"><i class="fa fa-check text-primary me-3"></i>Architectural Solutions</p>
-                        <p class="fw-bold mb-2"><i class="fa fa-check text-primary me-3"></i>Personalized Consultations</p>
+                        <p class="fw-bold mb-2"><i class="fa fa-check text-primary me-3"></i>Personalized Consultations
+                        </p>
                         <p class="fw-bold mb-2"><i class="fa fa-check text-primary me-3"></i>Remedial Measures</p>
                     </div>
                 </div>
-                <p class="mb-4">With a deep understanding of Vastu principles and their practical applications, we provide customized solutions for homes, offices, and commercial spaces. Our approach ensures that every space we work on radiates positive energy and supports your goals.</p>
+                <p class="mb-4">With a deep understanding of Vastu principles and their practical applications, we
+                    provide customized solutions for homes, offices, and commercial spaces. Our approach ensures that
+                    every space we work on radiates positive energy and supports your goals.</p>
             </div>
             <div class="col-lg-5 pb-5" style="min-height: 400px;">
                 <div class="position-relative bg-dark-radial h-100 ms-5">
@@ -84,7 +91,7 @@
         <div class="text-center mx-auto mb-5" style="max-width: 600px;">
             <h1 class="display-5 text-uppercase mb-4">Our <span class="text-primary">Services</span></h1>
         </div>
-        <div class="row g-5">
+        <div class="row ">
             @foreach ($services as $service)
                 <div class="col-lg-4 col-md-6">
                     <div class="service-item bg-white rounded d-flex flex-column align-items-center text-center">
@@ -112,7 +119,9 @@
                 <div class="mb-4">
                     <h1 class="display-5 text-uppercase mb-4">Get A <span class="text-primary">Quote</span></h1>
                 </div>
-                <p class="mb-5">Request a personalized Vastu consultation for your space. Our experts will analyze your requirements and provide tailored solutions to enhance the energy flow and harmony in your environment.</p>
+                <p class="mb-5">Request a personalized Vastu consultation for your space. Our experts will analyze
+                    your requirements and provide tailored solutions to enhance the energy flow and harmony in your
+                    environment.</p>
                 <a class="btn btn-primary py-3 px-sm-5" href="{{ route('contact-us') }}">Contact Us</a>
             </div>
             <div class="col-lg-8 col-12">
@@ -200,7 +209,7 @@
             <h1 class="display-5 text-uppercase mb-4">Our <span class="text-primary">Projects</span>
             </h1>
         </div>
-        <div class="row g-5 portfolio-container">
+        <div class="row  portfolio-container">
             @foreach ($projects as $project)
                 <div class="col-xl-4 col-lg-6 col-md-6 portfolio-item first">
                     <div class="position-relative portfolio-box">
@@ -228,7 +237,7 @@
         <div class="text-center mx-auto mb-5" style="max-width: 600px;">
             <h1 class="display-5 text-uppercase mb-4">Our <span class="text-primary">Team</span></h1>
         </div>
-        <div class="row g-5">
+        <div class="row ">
             @foreach ($teams as $team)
                 <div class="col-xl-3 col-lg-4 col-md-6">
                     <div class="row g-0">
@@ -294,7 +303,7 @@
         <div class="text-center mx-auto mb-5" style="max-width: 600px;">
             <h1 class="display-5 text-uppercase mb-4">Latest From <span class="text-primary">Our Blog</span></h1>
         </div>
-        <div class="row g-5">
+        <div class="row ">
             @foreach ($blogs as $blog)
                 <div class="col-lg-4 col-md-6">
                     <div class="bg-light">
@@ -328,7 +337,7 @@
         <div class="text-center mx-auto mb-5" style="max-width: 600px;">
             <h1 class="display-5 text-uppercase mb-4">Contact <span class="text-primary">Information</span></h1>
         </div>
-        <div class="row g-5">
+        <div class="row ">
             <div class="col-lg-6 col-md-6">
                 <div class="bg-white p-5 h-100">
                     <i class="fa fa-map-marker-alt fa-3x text-primary mb-3"></i>
@@ -352,9 +361,15 @@
                     <i class="fa fa-share-alt fa-3x text-primary mb-3"></i>
                     <h3 class="text-uppercase">Follow Us</h3>
                     <div class="d-flex justify-content-start">
-                        <a href="https://www.facebook.com/share/15uroGRxhY/" class="btn btn-primary btn-lg-square rounded-0 me-2 d-flex align-items-center justify-content-center"><i class="fab fa-facebook-f"></i></a>
-                        <a href="https://g.page/r/CfkZJ6GvYSJBEBM/review" class="btn btn-primary btn-lg-square rounded-0 me-2 d-flex align-items-center justify-content-center"><i class="fab fa-google"></i></a>
-                        <a href="https://www.instagram.com/_suryavastu_6147/" class="btn btn-primary btn-lg-square rounded-0 d-flex align-items-center justify-content-center"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/share/15uroGRxhY/"
+                            class="btn btn-primary btn-lg-square rounded-0 me-2 d-flex align-items-center justify-content-center"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a href="https://g.page/r/CfkZJ6GvYSJBEBM/review"
+                            class="btn btn-primary btn-lg-square rounded-0 me-2 d-flex align-items-center justify-content-center"><i
+                                class="fab fa-google"></i></a>
+                        <a href="https://www.instagram.com/_suryavastu_6147/"
+                            class="btn btn-primary btn-lg-square rounded-0 d-flex align-items-center justify-content-center"><i
+                                class="fab fa-instagram"></i></a>
                     </div>
                 </div>
             </div>
@@ -367,10 +382,9 @@
                     <p class="m-0">Sunday: Closed</p>
                 </div>
             </div>
-            
+
         </div>
     </div>
     <!-- Contact Info End -->
 
 </div>
- 

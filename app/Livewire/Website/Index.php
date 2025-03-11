@@ -3,6 +3,7 @@
 namespace App\Livewire\Website;
 
 use App\Models\Blog;
+use App\Models\Gallery;
 use App\Models\Project;
 use App\Models\Quote;
 use App\Models\Service;
@@ -71,12 +72,14 @@ class Index extends Component
         $projects = Project::latest()->paginate(9);
         $teams = Team::latest()->paginate(8);
         $services = Service::all();
+        $galleries = Gallery::paginate(15);
         return view('livewire.website.index', [
             'testimonials' => $testimonials,
             'blogs' => $blogs,
             'projects' => $projects,
             'teams' => $teams,
-            'services' => $services
+            'services' => $services,
+            'galleries' => $galleries,
         ]);
     }
 }

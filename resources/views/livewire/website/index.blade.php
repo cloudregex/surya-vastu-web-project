@@ -239,6 +239,31 @@
     </div>
     <!-- Portfolio End -->
 
+     <!-- Image Gallery Start -->
+     <div class="container-fluid py-6 px-sm-5">
+        <div class="text-center mx-auto mb-5" style="max-width: 600px;">
+            <h1 class="display-5 text-uppercase mb-4">Image <span class="text-primary">Gallery</span></h1>
+        </div>
+        <div class="row ">
+
+        </div>
+        <div class="row g-3 portfolio-container">
+            @foreach ($galleries as $gallery)
+                <div class="col-xl-4 col-lg-6 col-md-6 portfolio-item first">
+                    <div class="position-relative portfolio-box">
+                        <img class="img-thumbnail" src="{{ asset('storage/' . $gallery->gallery_image) }}"
+                            alt="" style="width: 100%; height: 300px; object-fit: cover;">
+                        <a class="portfolio-btn" href="{{ asset('storage/' . $gallery->gallery_image) }}"
+                            data-lightbox="portfolio">
+                            <i class="bi bi-plus text-white"></i>
+                        </a>
+                    </div>
+                </div>
+            @endforeach
+        </div>
+    </div>
+    <!-- Image Gallery End -->
+
     <!-- Team Start -->
     <div class="container-fluid py-6 px-sm-5 d-none">
         <div class="text-center mx-auto mb-5" style="max-width: 600px;">

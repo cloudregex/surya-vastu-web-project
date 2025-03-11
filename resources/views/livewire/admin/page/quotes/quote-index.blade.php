@@ -1,11 +1,12 @@
 <x-dynamic-table icon='<i class="bi bi-chat-quote"></i>' trashRoute="" createRoute="" createButton="" filter="true"
-    listName="Quotes List" :filters="$filters" :sortBy="$sortBy" :sortDir="$sortDir" :array="$quotes" :arrayThead="[
+    listName="Appointments List" :filters="$filters" :sortBy="$sortBy" :sortDir="$sortDir" :array="$quotes" :arrayThead="[
         ['th' => 'Sr.No'],
         ['th' => 'Name', 'sort' => 'full_name'],
         ['th' => 'Email', 'sort' => 'email'],
         ['th' => 'Phone', 'sort' => 'phone'],
         ['th' => 'Project Type', 'sort' => 'project_type'],
         ['th' => 'Location', 'sort' => 'project_location'],
+        ['th' => 'Date', 'sort' => 'project_date'],
         ['th' => 'Action'],
     ]">
     <x-slot name="filter_data">
@@ -37,8 +38,9 @@
                 <td>{{ $item->phone }}</td>
                 <td>{{ $item->project_type }}</td>
                 <td>{{ $item->project_location }}</td>
+                <td>{{ format_date($item->project_date) }}</td>
                 <td>
-                    <button class="btn btn-danger" wire:click="deleteQuote('{{ encryptData($item->id) }}')">
+                    <button class="btn btn-danger" wire:click="deleteQuote('{{ encryptData($item->quote_id) }}')">
                         <i class="fa-solid fa-trash-can"></i>
                     </button>
                 </td>

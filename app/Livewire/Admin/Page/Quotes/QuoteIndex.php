@@ -1,15 +1,16 @@
 <?php
 
-namespace App\Livewire\Website\Pages;
+namespace App\Livewire\Admin\Page\Quotes;
 
 use App\Models\Quote;
 use App\Models\User;
 use Illuminate\Support\Facades\Auth;
+use Livewire\Attributes\Title;
 use Livewire\Attributes\Url;
 use Livewire\Component;
 use Livewire\WithPagination;
 
-class QuotesIndex extends Component
+class QuoteIndex extends Component
 {
     use WithPagination;
     #[Url(history: true)]
@@ -20,6 +21,8 @@ class QuotesIndex extends Component
     public $sortBy = 'created_at';
     #[Url(history: true)]
     public $sortDir = 'DESC';
+
+    #[Title('Appointments')]
 
     #[Url(history: true)]
     public $filters = [
@@ -70,7 +73,7 @@ class QuotesIndex extends Component
         // Decrypt the user ID
         $quote = Quote::find(decryptData($encryptedId));
         $quote->delete();
-        flashSuccess('Quote deleted successfully.');
+        flashSuccess('Appointment deleted successfully.');
     }
 
     public function render()
@@ -93,6 +96,6 @@ class QuotesIndex extends Component
                 $query->where('project_type', 'like', '%' . $this->filters['project_type'] . '%');
             })
             ->paginate($this->perPage);
-        return view('livewire.website.pages.quotes-index', compact('quotes'));
+        return view('livewire.admin.page.quotes.quote-index', compact('quotes'));
     }
 }

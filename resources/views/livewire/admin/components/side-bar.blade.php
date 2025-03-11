@@ -110,10 +110,10 @@
                           </a>
                       </li>
                   @endcan --}}
-                  @can('admin.appointments.index')
-                      <li class="slide {{ Route::is('admin.appointments*') ? 'active' : '' }}">
-                          <a href="{{ route('admin.appointments.index') }}"
-                              class="side-menu__item {{ Route::is('admin.appointments*') ? 'active' : '' }}">
+                  @can('admin.quotes.index')
+                      <li class="slide {{ Route::is('admin.quotes*') ? 'active' : '' }}">
+                          <a href="{{ route('admin.quotes.index') }}"
+                              class="side-menu__item {{ Route::is('admin.quotes*') ? 'active' : '' }}">
                               <svg xmlns="http://www.w3.org/2000/svg" class="side-menu__icon" fill="currentColor"
                                   class="bi bi-diagram-3" viewBox="0 0 16 16">
                                   <path fill-rule="evenodd"

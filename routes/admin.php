@@ -117,7 +117,7 @@
   Route::get('/admin/services-create', ServiceCreate::class)->name('admin.services.create');
   Route::get('/admin/services-edit/{encryptedId}', ServiceEdit::class)->name('admin.services.edit');
 
-  // appointments
-  Route::get('/appointments', QuoteIndex::class)->name('admin.appointments.index');
+  // quotes
+  Route::get('/quotes', QuoteIndex::class)->name('admin.quotes.index');
     
    // ===================================================== End Pages Routes ==========================================================

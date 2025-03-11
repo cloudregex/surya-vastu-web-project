@@ -18,7 +18,13 @@
                     <img class="img-fluid w-80 rounded mb-5 img-thumbnail"
                         src="{{ Storage::url($service->service_image) }}" alt="">
                     <h1 class="text-uppercase mb-4">{{ $service->service_name }}</h1>
+                    <hr/>
                     <p>{!! $service->service_description !!}</p>
+                    <br/>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                    data-bs-target="#quoteModal">
+                    Book Appointment
+                </button>
                 </div>
             </div>
 

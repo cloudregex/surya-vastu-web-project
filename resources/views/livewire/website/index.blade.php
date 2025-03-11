@@ -79,7 +79,7 @@
             <div class="col-lg-5 pb-5" style="min-height: 400px;">
                 <div class="position-relative bg-dark-radial h-100 ms-5">
                     <img class="position-absolute w-100 mt-5 ms-n5" src="{{ asset('website/img/about.jpg') }}"
-                        style="object-fit: cover;">
+                    style="object-fit: cover;">
                 </div>
             </div>
         </div>
@@ -91,7 +91,7 @@
         <div class="text-center mx-auto mb-5" style="max-width: 600px;">
             <h1 class="display-5 text-uppercase mb-4">Our <span class="text-primary">Services</span></h1>
         </div>
-        <div class="row ">
+        <div class="row g-3">
             @foreach ($services as $service)
                 <div class="col-lg-4 col-md-6">
                     <div class="service-item bg-white rounded d-flex flex-column align-items-center text-center">
@@ -112,12 +112,12 @@
     <!-- Services End -->
 
 
-    <!-- Appointment Start -->
-    <div class="container-fluid py-6 px-sm-5" id="quote">
+     <!-- Appointment Start -->
+     <div class="container-fluid py-5 px-sm-5" id="quote">
         <div class="row">
             <div class="col-lg-4 mb-5 mb-lg-0">
                 <div class="mb-4">
-                    <h1 class="display-5 text-uppercase mb-4">Get A <span class="text-primary">Quote</span></h1>
+                    <h1 class="display-5 text-uppercase mb-4">Book <span class="text-primary">Appointment</span></h1>
                 </div>
                 <p class="mb-5">Request a personalized Vastu consultation for your space. Our experts will analyze
                     your requirements and provide tailored solutions to enhance the energy flow and harmony in your
@@ -162,10 +162,17 @@
                                     <span class="text-danger">{{ $message }}</span>
                                 @enderror
                             </div>
-                            <div class="col-12 col-sm-12">
+                            <div class="col-12 col-sm-6">
                                 <input type="text" class="form-control border-0" wire:model="project_location"
                                     placeholder="Project Location *" style="height: 55px;">
                                 @error('project_location')
+                                    <span class="text-danger">{{ $message }}</span>
+                                @enderror
+                            </div>
+                            <div class="col-12  col-sm-6">
+                                <input type="date" class="form-control border-0 @error('project_date') is-invalid @enderror"
+                                    wire:model.defer="project_date" id="project_date" style="height: 55px" value="{{ $project_date }}">
+                                @error('project_date')
                                     <span class="text-danger">{{ $message }}</span>
                                 @enderror
                             </div>
@@ -179,7 +186,7 @@
                             <div class="col-12">
                                 <button class="btn btn-primary w-100 py-3" type="submit" wire:loading.remove
                                     wire:target="submitForm">
-                                    Request Quote
+                                    Book Appointment
                                 </button>
                                 <button class="btn btn-primary w-100 py-3" type="button" wire:loading
                                     wire:target="submitForm">
@@ -209,9 +216,9 @@
             <h1 class="display-5 text-uppercase mb-4">Our <span class="text-primary">Projects</span>
             </h1>
         </div>
-        <div class="row  portfolio-container">
+        <div class="row g-3 portfolio-container">
             @foreach ($projects as $project)
-                <div class="col-xl-4 col-lg-6 col-md-6 portfolio-item first">
+                <div class="col-xl-4 col-lg-6 col-md-6 portfolio-item first ">
                     <div class="position-relative portfolio-box">
                         <img class="img-fluid w-100" src="{{ asset('storage/' . $project->project_image) }}"
                             alt="{{ $project->project_title }}">
@@ -261,7 +268,7 @@
     <!-- Team End -->
 
     <!-- Testimonial Start -->
-    <div class="container-fluid bg-light py-6 px-sm-5">
+    <div class="container-fluid bg-light py-6 px-sm-5 mt-5">
         <div class="text-center mx-auto mb-5" style="max-width: 600px;">
             <h1 class="display-5 text-uppercase mb-4">What Our <span class="text-primary">Valued Clients</span> Say
             </h1>
@@ -303,7 +310,7 @@
         <div class="text-center mx-auto mb-5" style="max-width: 600px;">
             <h1 class="display-5 text-uppercase mb-4">Latest From <span class="text-primary">Our Blog</span></h1>
         </div>
-        <div class="row ">
+        <div class="row g-3">
             @foreach ($blogs as $blog)
                 <div class="col-lg-4 col-md-6">
                     <div class="bg-light">
@@ -337,7 +344,7 @@
         <div class="text-center mx-auto mb-5" style="max-width: 600px;">
             <h1 class="display-5 text-uppercase mb-4">Contact <span class="text-primary">Information</span></h1>
         </div>
-        <div class="row ">
+        <div class="row g-3">
             <div class="col-lg-6 col-md-6">
                 <div class="bg-white p-5 h-100">
                     <i class="fa fa-map-marker-alt fa-3x text-primary mb-3"></i>

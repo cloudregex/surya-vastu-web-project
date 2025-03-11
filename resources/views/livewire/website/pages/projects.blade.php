@@ -16,7 +16,7 @@
             <h1 class="display-5 text-uppercase mb-4">Our <span class="text-primary">Projects</span>
             </h1>
         </div>
-        <div class="row  portfolio-container">
+        <div class="row g-3 portfolio-container">
             @foreach ($projects as $project)
                 <div class="col-xl-4 col-lg-6 col-md-6 portfolio-item first">
                     <div class="position-relative portfolio-box">

@@ -13,6 +13,7 @@ class QuoteForm extends Component
     public $project_type;
     public $project_location;
     public $project_description;
+    public $project_date;
 
     protected $rules = [
         'full_name' => 'required',
@@ -21,7 +22,13 @@ class QuoteForm extends Component
         'project_type' => 'required',
         'project_location' => 'required',
         'project_description' => 'required',
+        'project_date' => 'required|date',
     ];
+
+    public function mount()
+    {
+        $this->project_date = now()->addDay()->format('Y-m-d');
+    }
 
     public function submit()
     {
@@ -34,6 +41,7 @@ class QuoteForm extends Component
             'project_type' => $this->project_type,
             'project_location' => $this->project_location,
             'project_description' => $this->project_description,
+            'project_date' => $this->project_date,
         ]);
 
         session()->flash('message', 'Quote request submitted successfully!');

@@ -18,7 +18,7 @@
         <div class="row ">
 
         </div>
-        <div class="row  portfolio-container">
+        <div class="row g-3 portfolio-container">
             @foreach ($galleries as $gallery)
                 <div class="col-xl-4 col-lg-6 col-md-6 portfolio-item first">
                     <div class="position-relative portfolio-box">

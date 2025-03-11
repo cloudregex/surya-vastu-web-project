@@ -15,7 +15,7 @@
         <div class="text-center mx-auto mb-5" style="max-width: 600px;">
             <h1 class="display-5 text-uppercase mb-4">Contact <span class="text-primary">Information</span></h1>
         </div>
-        <div class="row ">
+        <div class="row g-3">
             <div class="col-lg-6 col-md-6">
                 <div class="bg-white p-5 h-100">
                     <i class="fa fa-map-marker-alt fa-3x text-primary mb-3"></i>

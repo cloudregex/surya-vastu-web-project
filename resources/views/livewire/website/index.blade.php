@@ -50,7 +50,7 @@
 
     <!-- About Start -->
     <div class="container-fluid py-5 px-sm-5">
-        <div class="row g-5">
+        <div class="row">
             <div class="col-lg-7">
                 <h1 class="display-5 text-uppercase mb-4">Expert <span class="text-primary">Vastu</span> Consultation</h1>
                 <h4 class="text-uppercase mb-3 text-body">Creating Harmonious Living and Working Spaces</h4>
@@ -107,7 +107,7 @@
 
     <!-- Appointment Start -->
     <div class="container-fluid py-6 px-sm-5" id="quote">
-        <div class="row gx-5">
+        <div class="row">
             <div class="col-lg-4 mb-5 mb-lg-0">
                 <div class="mb-4">
                     <h1 class="display-5 text-uppercase mb-4">Get A <span class="text-primary">Quote</span></h1>

@@ -15,10 +15,10 @@
         <div class="text-center mx-auto mb-5" style="max-width: 600px;">
             <h1 class="display-5 text-uppercase mb-4">Image <span class="text-primary">Gallery</span></h1>
         </div>
-        <div class="row gx-5">
+        <div class="row ">
 
         </div>
-        <div class="row g-5 portfolio-container">
+        <div class="row  portfolio-container">
             @foreach ($galleries as $gallery)
                 <div class="col-xl-4 col-lg-6 col-md-6 portfolio-item first">
                     <div class="position-relative portfolio-box">

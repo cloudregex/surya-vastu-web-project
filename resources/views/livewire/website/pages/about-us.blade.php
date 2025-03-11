@@ -12,14 +12,16 @@
 
     <!-- About Start -->
     <div class="container-fluid py-6 px-sm-5">
-        <div class="row g-5">
+        <div class="row ">
             <div class="col-lg-7">
                 <h1 class="display-5 text-uppercase mb-4">We are <span class="text-primary">Surya Vastu</span>
                 </h1>
                 <h4 class="text-uppercase mb-3 text-body">Creating Harmonious Spaces Since 2010</h4>
-                <p class="mb-4">Surya Vastu has established itself as a trusted name in Vastu consultation and architectural solutions. Based in Pune, we have successfully helped numerous clients achieve balance and prosperity in their homes and businesses.</p>
+                <p class="mb-4">Surya Vastu has established itself as a trusted name in Vastu consultation and
+                    architectural solutions. Based in Pune, we have successfully helped numerous clients achieve balance
+                    and prosperity in their homes and businesses.</p>
 
-                <div class="row gx-5 py-2">
+                <div class="row  py-2">
                     <div class="col-sm-6 mb-2">
                         <p class="fw-bold mb-2"><i class="fa fa-check text-primary me-3"></i>Expert Vastu Analysis</p>
                         <p class="fw-bold mb-2"><i class="fa fa-check text-primary me-3"></i>Space Optimization</p>
@@ -27,7 +29,8 @@
                     </div>
                     <div class="col-sm-6 mb-2">
                         <p class="fw-bold mb-2"><i class="fa fa-check text-primary me-3"></i>Architectural Solutions</p>
-                        <p class="fw-bold mb-2"><i class="fa fa-check text-primary me-3"></i>Personalized Consultations</p>
+                        <p class="fw-bold mb-2"><i class="fa fa-check text-primary me-3"></i>Personalized Consultations
+                        </p>
                         <p class="fw-bold mb-2"><i class="fa fa-check text-primary me-3"></i>Remedial Measures</p>
                     </div>
                 </div>
@@ -44,7 +47,8 @@
                         </a>
                     </li>
                     <li class="mb-2">
-                        <a href="https://maps.google.com/?q=Baramati, Pandare, Maharashtra 413110" target="_blank" class="text-decoration-none text-body">
+                        <a href="https://maps.google.com/?q=Baramati, Pandare, Maharashtra 413110" target="_blank"
+                            class="text-decoration-none text-body">
                             <i class="fa fa-map-marker text-primary me-3"></i>Baramati, Pandare, Maharashtra 413110
                         </a>
                     </li>
@@ -62,7 +66,7 @@
 
     <!-- Facts Start -->
     <div class="container-fluid bg-dark py-6 px-sm-5">
-        <div class="row gx-5 gy-4">
+        <div class="row  gy-4">
             <div class="col-lg-3 col-md-6">
                 <div class="text-center">
                     <i class="fa fa-building fa-3x text-white mb-3"></i>
@@ -97,21 +101,28 @@
 
     <!-- Vision Mission Start -->
     <div class="container-fluid py-6 px-sm-5">
-        <div class="row g-5">
+        <div class="row ">
             <div class="col-lg-6">
                 <h1 class="display-5 text-uppercase mb-4">Our <span class="text-primary">Vision</span></h1>
-                <p class="mb-4">To be the most trusted name in Vastu consultation and architectural solutions, delivering spaces that enhance well-being and create lasting value for our clients.</p>
-                <p class="mb-4">We aim to set new standards in Vastu excellence through traditional knowledge, modern techniques, and unwavering commitment to our clients' needs.</p>
+                <p class="mb-4">To be the most trusted name in Vastu consultation and architectural solutions,
+                    delivering spaces that enhance well-being and create lasting value for our clients.</p>
+                <p class="mb-4">We aim to set new standards in Vastu excellence through traditional knowledge, modern
+                    techniques, and unwavering commitment to our clients' needs.</p>
             </div>
             <div class="col-lg-6">
                 <h1 class="display-5 text-uppercase mb-4">Our <span class="text-primary">Mission</span></h1>
-                <p class="mb-4">To deliver exceptional Vastu and architectural solutions that exceed client expectations through:</p>
+                <p class="mb-4">To deliver exceptional Vastu and architectural solutions that exceed client
+                    expectations through:</p>
                 <ul class="list-unstyled">
-                    <li class="mb-2"><i class="fa fa-check text-primary me-3"></i>Maintaining highest Vastu standards</li>
-                    <li class="mb-2"><i class="fa fa-check text-primary me-3"></i>Employing innovative architectural techniques</li>
+                    <li class="mb-2"><i class="fa fa-check text-primary me-3"></i>Maintaining highest Vastu standards
+                    </li>
+                    <li class="mb-2"><i class="fa fa-check text-primary me-3"></i>Employing innovative architectural
+                        techniques</li>
                     <li class="mb-2"><i class="fa fa-check text-primary me-3"></i>Ensuring personalized solutions</li>
-                    <li class="mb-2"><i class="fa fa-check text-primary me-3"></i>Fostering long-term client relationships</li>
-                    <li class="mb-2"><i class="fa fa-check text-primary me-3"></i>Contributing to harmonious living</li>
+                    <li class="mb-2"><i class="fa fa-check text-primary me-3"></i>Fostering long-term client
+                        relationships</li>
+                    <li class="mb-2"><i class="fa fa-check text-primary me-3"></i>Contributing to harmonious living
+                    </li>
                 </ul>
             </div>
         </div>

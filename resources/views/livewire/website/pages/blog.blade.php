@@ -14,7 +14,7 @@
         <div class="text-center mx-auto mb-5" style="max-width: 600px;">
             <h1 class="display-5 text-uppercase mb-4">Latest From <span class="text-primary">Our Blog</span></h1>
         </div>
-        <div class="row g-5">
+        <div class="row ">
             @foreach ($blogs as $blog)
                 <div class="col-lg-4 col-md-6">
                     <div class="bg-light">

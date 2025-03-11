@@ -12,7 +12,7 @@
 
     <!-- Blog Start -->
     <div class="container-fluid py-6 px-sm-5 text-center">
-        <div class="row g-5">
+        <div class="row ">
             <div class="col-lg-12 mx-auto">
                 <div class="mb-5">
                     <img class="img-fluid w-80 rounded mb-5 img-thumbnail"

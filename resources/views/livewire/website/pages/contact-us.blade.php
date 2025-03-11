@@ -15,7 +15,7 @@
         <div class="text-center mx-auto mb-5" style="max-width: 600px;">
             <h1 class="display-5 text-uppercase mb-4">Contact <span class="text-primary">Information</span></h1>
         </div>
-        <div class="row g-5">
+        <div class="row ">
             <div class="col-lg-6 col-md-6">
                 <div class="bg-white p-5 h-100">
                     <i class="fa fa-map-marker-alt fa-3x text-primary mb-3"></i>
@@ -39,9 +39,15 @@
                     <i class="fa fa-share-alt fa-3x text-primary mb-3"></i>
                     <h3 class="text-uppercase">Follow Us</h3>
                     <div class="d-flex justify-content-start">
-                        <a href="https://www.facebook.com/share/15uroGRxhY/" class="btn btn-primary btn-lg-square rounded-0 me-2 d-flex align-items-center justify-content-center"><i class="fab fa-facebook-f"></i></a>
-                        <a href="https://g.page/r/CfkZJ6GvYSJBEBM/review" class="btn btn-primary btn-lg-square rounded-0 me-2 d-flex align-items-center justify-content-center"><i class="fab fa-google"></i></a>
-                        <a href="https://www.instagram.com/_suryavastu_6147/" class="btn btn-primary btn-lg-square rounded-0 d-flex align-items-center justify-content-center"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/share/15uroGRxhY/"
+                            class="btn btn-primary btn-lg-square rounded-0 me-2 d-flex align-items-center justify-content-center"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a href="https://g.page/r/CfkZJ6GvYSJBEBM/review"
+                            class="btn btn-primary btn-lg-square rounded-0 me-2 d-flex align-items-center justify-content-center"><i
+                                class="fab fa-google"></i></a>
+                        <a href="https://www.instagram.com/_suryavastu_6147/"
+                            class="btn btn-primary btn-lg-square rounded-0 d-flex align-items-center justify-content-center"><i
+                                class="fab fa-instagram"></i></a>
                     </div>
                 </div>
             </div>
@@ -54,7 +60,7 @@
                     <p class="m-0">Sunday: Closed</p>
                 </div>
             </div>
-            
+
         </div>
     </div>
     <!-- Contact Info End -->

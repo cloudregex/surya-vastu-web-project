@@ -15,7 +15,7 @@
         <div class="text-center mx-auto mb-5" style="max-width: 600px;">
             <h1 class="display-5 text-uppercase mb-4">Our <span class="text-primary">Services</span></h1>
         </div>
-        <div class="row g-5">
+        <div class="row ">
             @foreach ($services as $service)
                 <div class="col-lg-4 col-md-6">
                     <div class="service-item bg-white rounded d-flex flex-column align-items-center text-center">

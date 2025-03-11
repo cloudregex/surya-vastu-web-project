@@ -14,25 +14,29 @@
     <div class="container-fluid py-6 px-sm-5">
         <div class="row g-5">
             <div class="col-lg-7">
-                <h1 class="display-5 text-uppercase mb-4">We are <span class="text-primary">PNP Infra Projects</span>
+                <h1 class="display-5 text-uppercase mb-4">We are <span class="text-primary">Surya Vastu</span>
                 </h1>
-                <h4 class="text-uppercase mb-3 text-body">Building Excellence Since 2010</h4>
-                <p class="mb-4">PNP Infra Projects has established itself as a trusted name in the construction and
-                    infrastructure development sector. Based in Pune, we have successfully delivered numerous projects
-                    across residential, commercial, and industrial segments.</p>
+                <h4 class="text-uppercase mb-3 text-body">Creating Harmonious Spaces Since 2010</h4>
+                <p class="mb-4">Surya Vastu has established itself as a trusted name in Vastu consultation and architectural solutions. Based in Pune, we have successfully helped numerous clients achieve balance and prosperity in their homes and businesses.</p>
 
                 <div class="row gx-5 py-2">
                     <div class="col-sm-6 mb-2">
-                        <p class="fw-bold mb-2"><i class="fa fa-check text-primary me-3"></i>Expert Project Planning</p>
-                        <p class="fw-bold mb-2"><i class="fa fa-check text-primary me-3"></i>Quality Construction</p>
-                        <p class="fw-bold mb-2"><i class="fa fa-check text-primary me-3"></i>Innovative Solutions</p>
+                        <p class="fw-bold mb-2"><i class="fa fa-check text-primary me-3"></i>Expert Vastu Analysis</p>
+                        <p class="fw-bold mb-2"><i class="fa fa-check text-primary me-3"></i>Space Optimization</p>
+                        <p class="fw-bold mb-2"><i class="fa fa-check text-primary me-3"></i>Energy Flow Enhancement</p>
                     </div>
                     <div class="col-sm-6 mb-2">
-                        <p class="fw-bold mb-2"><i class="fa fa-check text-primary me-3"></i>Timely Delivery</p>
-                        <p class="fw-bold mb-2"><i class="fa fa-check text-primary me-3"></i>Professional Team</p>
-                        <p class="fw-bold mb-2"><i class="fa fa-check text-primary me-3"></i>Cost Effectiveness</p>
+                        <p class="fw-bold mb-2"><i class="fa fa-check text-primary me-3"></i>Architectural Solutions</p>
+                        <p class="fw-bold mb-2"><i class="fa fa-check text-primary me-3"></i>Personalized Consultations</p>
+                        <p class="fw-bold mb-2"><i class="fa fa-check text-primary me-3"></i>Remedial Measures</p>
                     </div>
                 </div>
+                <p class="mb-4">Contact us today to transform your space with Vastu wisdom:</p>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><i class="fa fa-phone text-primary me-3"></i>+91 8087316147</li>
+                    <li class="mb-2"><i class="fa fa-envelope text-primary me-3"></i>suryavastu6147@gmail.com</li>
+                    <li class="mb-2"><i class="fa fa-map-marker text-primary me-3"></i>Baramati, Pandare, Maharashtra 413110</li>
+                </ul>
             </div>
             <div class="col-lg-5 pb-5" style="min-height: 400px;">
                 <div class="position-relative bg-dark-radial h-100 ms-5">
@@ -84,27 +88,18 @@
         <div class="row g-5">
             <div class="col-lg-6">
                 <h1 class="display-5 text-uppercase mb-4">Our <span class="text-primary">Vision</span></h1>
-                <p class="mb-4">To be the most trusted name in construction and infrastructure development,
-                    delivering
-                    projects that enhance communities and create lasting value for our clients.</p>
-                <p class="mb-4">We aim to set new standards in construction excellence through innovation,
-                    sustainability, and unwavering commitment to quality.</p>
+                <p class="mb-4">To be the most trusted name in Vastu consultation and architectural solutions, delivering spaces that enhance well-being and create lasting value for our clients.</p>
+                <p class="mb-4">We aim to set new standards in Vastu excellence through traditional knowledge, modern techniques, and unwavering commitment to our clients' needs.</p>
             </div>
             <div class="col-lg-6">
                 <h1 class="display-5 text-uppercase mb-4">Our <span class="text-primary">Mission</span></h1>
-                <p class="mb-4">To deliver exceptional construction and infrastructure solutions that exceed client
-                    expectations through:</p>
+                <p class="mb-4">To deliver exceptional Vastu and architectural solutions that exceed client expectations through:</p>
                 <ul class="list-unstyled">
-                    <li class="mb-2"><i class="fa fa-check text-primary me-3"></i>Maintaining highest quality
-                        standards</li>
-                    <li class="mb-2"><i class="fa fa-check text-primary me-3"></i>Employing innovative construction
-                        techniques</li>
-                    <li class="mb-2"><i class="fa fa-check text-primary me-3"></i>Ensuring timely project completion
-                    </li>
-                    <li class="mb-2"><i class="fa fa-check text-primary me-3"></i>Fostering long-term client
-                        relationships</li>
-                    <li class="mb-2"><i class="fa fa-check text-primary me-3"></i>Contributing to sustainable
-                        development</li>
+                    <li class="mb-2"><i class="fa fa-check text-primary me-3"></i>Maintaining highest Vastu standards</li>
+                    <li class="mb-2"><i class="fa fa-check text-primary me-3"></i>Employing innovative architectural techniques</li>
+                    <li class="mb-2"><i class="fa fa-check text-primary me-3"></i>Ensuring personalized solutions</li>
+                    <li class="mb-2"><i class="fa fa-check text-primary me-3"></i>Fostering long-term client relationships</li>
+                    <li class="mb-2"><i class="fa fa-check text-primary me-3"></i>Contributing to harmonious living</li>
                 </ul>
             </div>
         </div>

@@ -28,8 +28,6 @@ class QuotesIndex extends Component
         'phone' => null,
         'project_type' => null,
         'project_location' => null,
-        'estimated_budget' => null,
-        'expected_timeline' => null,
     ];
 
     public function setSortBy($sortField)

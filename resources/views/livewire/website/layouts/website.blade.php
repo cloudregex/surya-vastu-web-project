@@ -3,16 +3,16 @@
 
 <head>
     <meta charset="utf-8">
-    <title>{{ $title ?? 'Page Title' }} | PNP Infra Projects</title>
+    <title>{{ $title ?? 'Page Title' }} | Surya Vastu</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="Construction, Infrastructure, Projects" name="keywords">
-    <meta content="PNP Infra Projects - Leading Construction and Infrastructure Development Company" name="description">
+    <meta content="Vastu, Construction, Architecture" name="keywords">
+    <meta content="Surya Vastu - Expert Vastu Consultation and Architectural Solutions" name="description">
 
     <!-- Livewire Styles -->
     @livewireStyles
 
     <!-- Favicon -->
-    <link href="{{ asset('website/img/favicon.ico') }}" rel="icon">
+    <link href="{{ asset('website/favicon/favicon.png') }}" rel="icon">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -52,8 +52,8 @@
         input,
         a,
         button,
-        label {
-            font-family: "Sora", serif;
+        label, small {
+            font-family: "Sora", serif !important;
             font-weight: 400;
             font-style: normal;
         }
@@ -63,17 +63,30 @@
         h3,
         h4,
         h5,
-        h6 {
+        h6, .text-primary {
             font-weight: 600;
         }
 
         .top-60 {
             top: 80% !important;
         }
+
+       
+ 
     </style>
 </head>
 
 <body>
+    <!-- Loader -->
+    <div id="loader">
+        <img src="{{ asset('website/img/logo.jpg') }}" alt="Surya Vastu">
+        <div class="loader-text">
+            <h5>Surya Vastu</h5>
+            <small>Vastu Consultant</small>
+        </div>
+        <div class="loading-line"></div>
+    </div>
+
     <!-- Topbar Start -->
     <div class="container-fluid px-5 d-none d-lg-block">
         <div class="row gx-5">
@@ -82,28 +95,25 @@
                     <i class="bi bi-geo-alt text-primary me-3"></i>
                     <div class="text-start">
                         <h6 class="text-uppercase fw-bold">Our Office</h6>
-                        <span>FLAT NO. B-1, Sunrise Apartment, SR NO 46/3, Bombay shopper, Wadgaon Seri, PUNE-
-                            411014</span>
+                        <span>Baramati, Pandare, Maharashtra 413110</span>
                     </div>
                 </div>
             </div>
             <div class="col-lg-4 text-center border-start border-end py-3">
                 <div class="d-inline-flex align-items-center">
-                    <i class="bi bi-envelope-ope text-primary me-3"></i>
+                    <i class="bi bi-envelope text-primary me-3"></i>
                     <div class="text-start">
                         <h6 class="text-uppercase fw-bold">Email Us</h6>
-                        <a href="mailto:pnpinfraprojects@gmail.com" class="text-body">pnpinfraprojects@gmail.com</a>
+                        <a href="mailto:suryavastu6147@gmail.com" class="text-body">suryavastu6147@gmail.com</a>
                     </div>
                 </div>
             </div>
             <div class="col-lg-4 text-center py-3">
                 <div class="d-inline-flex align-items-center">
-                    <i class="bi bi-phone-vib text-primary me-3"></i>
+                    <i class="bi bi-telephone text-primary me-3"></i>
                     <div class="text-start">
                         <h6 class="text-uppercase fw-bold">Call Us</h6>
-                        <a href="tel:+917387747503" class="text-body">+91 7387747503</a>,
-                        <a href="tel:+919850029403" class="text-body">+91 9850029403</a>,
-                        <a href="tel:+918600549090" class="text-body">+91 8600549090</a>
+                        <a href="tel:+918087316147" class="text-body">+91 8087316147</a>
                     </div>
                 </div>
             </div>
@@ -114,17 +124,19 @@
 
     <!-- Navbar Start -->
     <div class="container-fluid sticky-top bg-dark bg-light-radial shadow-sm px-2 pe-lg-0">
-        <nav class="navbar navbar-expand-lg bg-dark bg-light-radial navbar-dark py-0 py-lg-0">
+        <nav class="navbar navbar-expand-lg bg-dark bg-light-radial navbar-dark py-2 py-lg-0">
             <a href="{{ route('index') }}" class="navbar-brand">
                 <div class="d-flex align-items-center">
-                    <i class="bi bi-building text-primary me-2 fa-2x"></i>
-                    <h5 class="m-0 text-uppercase text-white">PNP
-                        Infra <br /> Projects</h5>
+                   <img height="50" width="50" src="{{asset('website/img/logo.jpg')}}" alt="Surya Vastu"/>
+                   <div>
+                    <h5 class="m-0 text-uppercase text-white">Surya Vastu</h5>
+                    <small>Vastu Consultant</small>
+                   </div>
                 </div>
 
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                <span class="navbar-toggler-icon"></span>
+                <i class="bi bi-list-nested text-warning"></i>
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav ms-auto py-0">
@@ -133,9 +145,9 @@
                     <a href="{{ route('about-us') }}"
                         class="nav-item nav-link {{ request()->routeIs('about-us*') ? 'active' : '' }}">About</a>
                     <a href="{{ route('services') }}"
-                        class="nav-item nav-link {{ request()->routeIs('services*') ? 'active' : '' }}">Services</a>
+                        class="nav-item nav-link {{ request()->routeIs('services*') || request()->routeIs('service-details') ? 'active' : '' }}">Services</a>
                     <a href="{{ route('projects') }}"
-                        class="nav-item nav-link {{ request()->routeIs('projects*') ? 'active' : '' }}">Projects</a>
+                        class="nav-item nav-link {{ request()->routeIs('projects*') || request()->routeIs('project-details') ? 'active' : '' }}">Projects</a>
                     <a href="{{ route('gallery') }}"
                         class="nav-item nav-link {{ request()->routeIs('gallery*') ? 'active' : '' }}">Gallery</a>
                     <!-- <a href="{{ route('team') }}"
@@ -155,33 +167,29 @@
     <div class="footer container-fluid position-relative bg-dark bg-light-radial text-white-50 py-5 px-5">
         <div class="row g-5">
             <div class="col-lg-6 pe-lg-5">
-                <a href="/" class="navbar-brand">
+                <a href="{{ route('index') }}" class="navbar-brand">
                     <div class="d-flex align-items-center">
-                        <i class="bi bi-building text-primary me-2 fa-3x"></i>
-                        <h3 class="m-0 text-uppercase text-white">PNP
-                            Infra <br /> Projects</h3>
+                       <img height="80" width="80" src="{{asset('website/img/logo.jpg')}}" alt="Surya Vastu"/>
+                       <div>
+                        <h5 class="m-0 text-uppercase text-white">Surya Vastu</h5>
+                        <small class="text-white">Vastu Consultant</small>
+                       </div>
                     </div>
+    
                 </a>
-                <p class="mt-1 mb-2">Your trusted partner in construction and infrastructure development. We deliver
-                    excellence through innovation, quality, and commitment.</p>
-                <p><i class="fa fa-map-marker-alt me-2"></i>FLAT NO. B-1, Sunrise Apartment, SR NO 46/3, Bombay shopper,
-                    Wadgaon Seri, PUNE- 411014</p>
+                <p class="mt-1 mb-2">Expert Vastu Consultation and Architectural Solutions for harmonious living spaces.</p>
+                <p><i class="fa fa-map-marker-alt me-2"></i>Baramati, Pandare, Maharashtra 413110</p>
                 <p><i class="fa fa-phone-alt me-2"></i>
-                    <a href="tel:+917387747503" class="text-white-50">+91 7387747503</a>,
-                    <a href="tel:+919850029403" class="text-white-50">+91 9850029403</a>,
-                    <a href="tel:+918600549090" class="text-white-50">+91 8600549090</a>
+                    <a href="tel:+918087316147" class="text-white-50">+91 8087316147</a>
                 </p>
-                <p><i class="fa fa-envelope me-2"></i><a href="mailto:pnpinfraprojects@gmail.com"
-                        class="text-white-50">pnpinfraprojects@gmail.com</a></p>
-                <p><i class="fa fa-id-card me-2"></i>GSTIN: 27AAHFP6682Q1ZV</p>
+                <p><i class="fa fa-envelope me-2"></i><a href="mailto:suryavastu6147@gmail.com"
+                        class="text-white-50">suryavastu6147@gmail.com</a></p>
                 <div class="d-flex justify-content-start mt-4">
-                    <a class="btn btn-lg btn-primary btn-lg-square rounded-0 me-2" href="#"><i
-                            class="fab fa-twitter"></i></a>
-                    <a class="btn btn-lg btn-primary btn-lg-square rounded-0 me-2" href="#"><i
+                    <a class="btn btn-lg btn-primary btn-lg-square rounded-0 me-2" href="https://www.facebook.com/share/15uroGRxhY/"><i
                             class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-lg btn-primary btn-lg-square rounded-0 me-2" href="#"><i
-                            class="fab fa-linkedin-in"></i></a>
-                    <a class="btn btn-lg btn-primary btn-lg-square rounded-0" href="#"><i
+                    <a class="btn btn-lg btn-primary btn-lg-square rounded-0 me-2" href="https://g.page/r/CfkZJ6GvYSJBEBM/review"><i
+                            class="fab fa-google"></i></a>
+                    <a class="btn btn-lg btn-primary btn-lg-square rounded-0" href="https://www.instagram.com/_suryavastu_6147/"><i
                             class="fab fa-instagram"></i></a>
                 </div>
             </div>
@@ -215,10 +223,8 @@
                             <p class="text-white-50">9:00 AM - 7:00 PM</p>
                             <p class="text-white-50">Sunday: Closed</p>
                             <p class="text-white-50 mt-3">Emergency Contact:</p>
-                            <p class="text-white-50"><a href="tel:+917387747503" class="text-white-50">+91
-                                    7387747503</a>,
-                                <a href="tel:+919850029403" class="text-white-50">+91 9850029403</a>,
-                                <a href="tel:+918600549090" class="text-white-50">+91 8600549090</a>
+                            <p class="text-white-50"><a href="tel:+918087316147" class="text-white-50">+91
+                                    8087316147</a>
                             </p>
                         </div>
                     </div>
@@ -229,7 +235,7 @@
     <div class="container-fluid bg-dark bg-light-radial text-white border-top border-primary px-0">
         <div class="d-flex flex-column flex-md-row justify-content-between">
             <div class="py-4 px-5 text-center text-md-start">
-                <p class="mb-0">&copy; <a class="text-primary" href="#">PNP Infra Projects</a>. All Rights
+                <p class="mb-0">&copy; <a class="text-primary" href="https://suryavastu.com">Surya Vastu</a>. All Rights
                     Reserved.</p>
             </div>
             <div class="py-4 px-5 bg-primary footer-shape position-relative text-center text-md-end">
@@ -263,7 +269,7 @@
                     <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
                         aria-label="Close"></button>
                 </div>
-                <div class="modal-body">
+            <div class="modal-body">
                     <livewire:website.components.quote-form />
                 </div>
             </div>
@@ -308,6 +314,11 @@
                     onClick: function() {} // Callback after click
                 }).showToast();
             });
+        });
+
+        // Hide loader when page is fully loaded
+        window.addEventListener('load', function() {
+            document.getElementById('loader').style.display = 'none';
         });
     </script>
 </body>

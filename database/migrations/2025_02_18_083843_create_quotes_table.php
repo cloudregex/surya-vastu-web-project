@@ -18,8 +18,6 @@ return new class extends Migration
             $table->string('phone');
             $table->string('project_type');
             $table->string('project_location');
-            $table->string('estimated_budget')->nullable();
-            $table->string('expected_timeline')->nullable();
             $table->text('project_description');
             $table->timestamps();
         });

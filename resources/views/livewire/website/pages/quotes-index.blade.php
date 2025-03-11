@@ -6,8 +6,6 @@
         ['th' => 'Phone', 'sort' => 'phone'],
         ['th' => 'Project Type', 'sort' => 'project_type'],
         ['th' => 'Location', 'sort' => 'project_location'],
-        ['th' => 'Budget', 'sort' => 'estimated_budget'],
-        ['th' => 'Timeline', 'sort' => 'expected_timeline'],
         ['th' => 'Action'],
     ]">
     <x-slot name="filter_data">
@@ -28,14 +26,6 @@
                 value="{{ $filters['phone'] }}" label="Phone" modelOn="true" />
             <x-input type="text" col="4" placeholder="Enter Location" name="filters.project_location"
                 value="{{ $filters['project_location'] }}" label="Location" modelOn="true" />
-            <x-select dropdownParent="FilterModal" placeholder="Select Timeline" className="select_timeline"
-                col="4" name="filters.expected_timeline" :value="$filters['expected_timeline']" label="Timeline" :options="[
-                    (object) ['value' => 'Less than 3 months', 'text' => 'Less than 3 months'],
-                    (object) ['value' => '3-6 months', 'text' => '3-6 months'],
-                    (object) ['value' => '6-12 months', 'text' => '6-12 months'],
-                    (object) ['value' => 'Over 12 months', 'text' => 'Over 12 months'],
-                ]"
-                optionsid="value" optionsName="text" :shouldLive="false" />
         </div>
     </x-slot>
     <x-slot name="tbody">
@@ -47,8 +37,6 @@
                 <td>{{ $item->phone }}</td>
                 <td>{{ $item->project_type }}</td>
                 <td>{{ $item->project_location }}</td>
-                <td>{{ $item->estimated_budget }}</td>
-                <td>{{ $item->expected_timeline }}</td>
                 <td>
                     <button class="btn btn-danger" wire:click="deleteQuote('{{ encryptData($item->id) }}')">
                         <i class="fa-solid fa-trash-can"></i>

@@ -222,7 +222,7 @@
                             <p class="text-white-50">Monday - Saturday</p>
                             <p class="text-white-50">9:00 AM - 7:00 PM</p>
                             <p class="text-white-50">Sunday: Closed</p>
-                            <p class="text-white-50 mt-3">Emergency Contact:</p>
+                            <p class="text-white-50 mt-3">Our Contact:</p>
                             <p class="text-white-50"><a href="tel:+918087316147" class="text-white-50">+91
                                     8087316147</a>
                             </p>

@@ -15,7 +15,7 @@ use Livewire\Component;
 class Index extends Component
 {
     #[Layout('livewire.website.layouts.website')]
-    #[Title('Home')]
+    #[Title('Surya Vastu - Vastu Consultant')]
 
     public $full_name;
     public $email;

@@ -70,8 +70,6 @@
         .top-60 {
             top: 80% !important;
         }
-
-       
  
     </style>
 </head>
@@ -130,7 +128,7 @@
                    <img height="50" width="50" src="{{asset('website/img/logo.jpg')}}" alt="Surya Vastu"/>
                    <div>
                     <h5 class="m-0 text-uppercase text-white">Surya Vastu</h5>
-                    {{-- <small>Vastu Consultant</small> --}}
+                    <small>Vastu Consultant</small>
                    </div>
                 </div>
 

@@ -33,7 +33,7 @@
             @endforeach
         </div>
         <div class="paginate mt-3">
-            {!! $galleries->links() !!}
+            {!! $galleries->links('pagination::bootstrap-5') !!}
         </div>
     </div>
     <!-- Portfolio End -->

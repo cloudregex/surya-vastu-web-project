@@ -40,7 +40,7 @@
             @endforeach
         </div>
         <div class="paginate mt-3">
-            {!! $blogs->links() !!}
+            {!! $blogs->links('pagination::bootstrap-5') !!}
         </div>
     </div>
     <!-- Blog End -->

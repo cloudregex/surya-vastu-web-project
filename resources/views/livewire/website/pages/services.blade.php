@@ -33,7 +33,7 @@
             @endforeach
         </div>
         <div class="paginate mt-3">
-            {!! $services->links() !!}
+            {!! $services->links('pagination::bootstrap-5') !!}
         </div>
     </div>
     <!-- Services End -->

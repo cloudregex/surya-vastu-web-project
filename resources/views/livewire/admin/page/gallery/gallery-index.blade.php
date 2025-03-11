@@ -8,7 +8,7 @@
                 <td>
                     @if ($item->gallery_image)
                         <img src="{{ asset('storage/' . $item->gallery_image) }}" alt="Gallery Image"
-                            style="width: 100px; height: auto;">
+                            style="width: 100px; height: 100px;">
                     @else
                         No Image
                     @endif

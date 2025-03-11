@@ -33,9 +33,21 @@
                 </div>
                 <p class="mb-4">Contact us today to transform your space with Vastu wisdom:</p>
                 <ul class="list-unstyled">
-                    <li class="mb-2"><i class="fa fa-phone text-primary me-3"></i>+91 8087316147</li>
-                    <li class="mb-2"><i class="fa fa-envelope text-primary me-3"></i>suryavastu6147@gmail.com</li>
-                    <li class="mb-2"><i class="fa fa-map-marker text-primary me-3"></i>Baramati, Pandare, Maharashtra 413110</li>
+                    <li class="mb-2">
+                        <a href="tel:+918087316147" class="text-decoration-none text-body">
+                            <i class="fa fa-phone text-primary me-3"></i>+91 8087316147
+                        </a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="mailto:suryavastu6147@gmail.com" class="text-decoration-none text-body">
+                            <i class="fa fa-envelope text-primary me-3"></i>suryavastu6147@gmail.com
+                        </a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="https://maps.google.com/?q=Baramati, Pandare, Maharashtra 413110" target="_blank" class="text-decoration-none text-body">
+                            <i class="fa fa-map-marker text-primary me-3"></i>Baramati, Pandare, Maharashtra 413110
+                        </a>
+                    </li>
                 </ul>
             </div>
             <div class="col-lg-5 pb-5" style="min-height: 400px;">

@@ -130,7 +130,7 @@
                    <img height="50" width="50" src="{{asset('website/img/logo.jpg')}}" alt="Surya Vastu"/>
                    <div>
                     <h5 class="m-0 text-uppercase text-white">Surya Vastu</h5>
-                    <small>Vastu Consultant</small>
+                    {{-- <small>Vastu Consultant</small> --}}
                    </div>
                 </div>
 
@@ -252,12 +252,22 @@
     {{-- <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top" style="display: inline;"><i
             class="bi bi-arrow-up"></i></a> --}}
 
-    <!-- Fixed Quote Button -->
-    <div class="position-fixed top-60 end-0 mb-4 me-4" style="z-index: 1000;">
-        <button type="button" class="btn btn-primary py-md-3 px-md-5 mt-2" data-bs-toggle="modal"
-            data-bs-target="#quoteModal">
-            Get a Quote
-        </button>
+    <!-- Fixed Buttons -->
+    <div class="position-fixed end-0 mb-4 me-4" style="z-index: 1000; bottom: 0;">
+        <div class="d-flex gap-2">
+            <!-- Quote Button -->
+            <button type="button" class="btn btn-primary btn-lg rounded-circle" data-bs-toggle="modal"
+                data-bs-target="#quoteModal">
+                <i class="fas fa-question"></i>
+            </button>
+            
+            <!-- WhatsApp Button -->
+            <a href="https://wa.me/918087316147?text=Hi%20Surya%20Vastu,%20I%20would%20like%20to%20know%20more%20about%20your%20services" 
+               class="btn btn-success btn-lg rounded-circle" 
+               target="_blank">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+        </div>
     </div>
 
     <!-- Quote Modal -->

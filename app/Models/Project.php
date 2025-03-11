@@ -11,7 +11,7 @@ class Project extends Model
     use SoftDeletes, UsesUuid;
 
     const UUID_FIELD = 'project_id';
-
+    protected $table = 'projects';
     protected $primaryKey = self::UUID_FIELD;
 
     /**
@@ -20,14 +20,14 @@ class Project extends Model
     public static function rules($blogId = null)
     {
         $rules = [
-            'columns.project_title' => 'required|string|max:25|unique:Projects,project_title',
+            'columns.project_title' => 'required|string|max:25|unique:projects,project_title',
             'columns.project_user_name' => 'required|string|max:25',
             'columns.project_description' => 'required|string|min:100',
             'columns.project_date' => 'required|date',
             'columns.project_image' => 'required|image|mimes:jpeg,png,jpg|max:2048|dimensions:width=600,height=500',
         ];
         if ($blogId) {
-            $rules['columns.project_title'] = 'required|string|max:25|unique:Projects,project_title,' . $blogId . ',project_id';
+            $rules['columns.project_title'] = 'required|string|max:25|unique:projects,project_title,' . $blogId . ',project_id';
             $rules['columns.project_image'] = 'nullable|image|mimes:jpeg,png,jpg|max:2048|dimensions:width=600,height=500';
         }
         return $rules;

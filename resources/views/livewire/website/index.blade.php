@@ -42,7 +42,7 @@
 
     <!-- About Start -->
     <div class="container-fluid py-5 px-sm-5">
-        <div class="row g-5">
+        <div class="row">
             <div class="col-lg-7">
                 <h1 class="display-5 text-uppercase mb-4">We are <span class="text-primary">the Leaders</span> in
                     Infrastructure Development</h1>
@@ -106,7 +106,7 @@
 
     <!-- Appointment Start -->
     <div class="container-fluid py-6 px-sm-5" id="quote">
-        <div class="row gx-5">
+        <div class="row">
             <div class="col-lg-4 mb-5 mb-lg-0">
                 <div class="mb-4">
                     <h1 class="display-5 text-uppercase mb-4">Get A <span class="text-primary">Quote</span></h1>

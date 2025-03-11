@@ -14,7 +14,7 @@
                                 <div class="indicator active"></div>
                                 <div class="indicator"></div>
                             </div>
-                            <a href="#quote" class="btn btn-primary py-md-3 px-md-5 mt-2">Get A Quote</a>
+                            <a href="#quote" class="btn btn-primary py-md-3 px-md-5 mt-2">Book Appointment</a>
                         </div>
                     </div>
                 </div>

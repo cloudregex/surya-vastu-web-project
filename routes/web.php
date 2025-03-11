@@ -21,6 +21,8 @@ use App\Livewire\Website\Pages\Services;
 use App\Livewire\Website\Pages\Team;
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\File;
+use Illuminate\Support\Facades\Response;
 
 //================================================= TEMPLATE ADMIN AUTH ROUTE ======================================================
 Route::middleware(['auth', '2FA'])->group(base_path('routes/admin.php'));
@@ -60,5 +62,15 @@ Route::get('/storage-link', function () {
     }
 })->name('storage.link');
 
+Route::get('/sitemap.xml', function () {
+    $path = public_path('sitemap.xml');
+    if (!File::exists($path)) {
+        abort(404);
+    }
+    $content = File::get($path);
+    return Response::make($content, 200, [
+        'Content-Type' => 'application/xml'
+    ]);
+});
 
 //===================================================== END FRONT END ROUTES =======================================================

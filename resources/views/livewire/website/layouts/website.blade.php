@@ -5,14 +5,14 @@
     <meta charset="utf-8">
     <title>{{ $title ?? 'Page Title' }} | Surya Vastu</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="Vastu, Construction, Architecture" name="keywords">
+    <meta content="Vastu, Construction, Architecture, Vastu Consultant Baramati,Vastu Consultant Pune" name="keywords">
     <meta content="Surya Vastu - Expert Vastu Consultation and Architectural Solutions" name="description">
-
+    <meta name="google-site-verification" content="UgMpJS5YruMnxAp3cUaM3SGBXurCAy0sl9ar0bT2A0k" />
     <!-- Livewire Styles -->
     @livewireStyles
 
     <!-- Favicon -->
-    <link href="{{ asset('website/favicon/favicon.png') }}" rel="icon">
+    <link href="{{ asset('website/img/logo.jpg') }}" rel="icon">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -151,7 +151,7 @@
                     <!-- <a href="{{ route('team') }}"
                         class="nav-item nav-link {{ request()->routeIs('team*') ? 'active' : '' }}">Team</a> -->
                     <a href="{{ route('contact-us') }}"
-                        class="nav-item nav-link {{ request()->routeIs('contact-us*') ? 'active' : '' }}">Contact</a>
+                        class="nav-item nav-link {{ request()->routeIs('contact-us*') ? 'active' : '' }}">Contact Us</a>
                 </div>
             </div>
         </nav>
@@ -256,7 +256,7 @@
             <!-- Quote Button -->
             <button type="button" class="btn btn-primary btn-lg rounded-circle" data-bs-toggle="modal"
                 data-bs-target="#quoteModal">
-                <i class="fas fa-question"></i>
+                <i class="fas fa-calendar-check"></i>
             </button>
             
             <!-- WhatsApp Button -->
@@ -273,7 +273,7 @@
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header bg-primary text-white">
-                    <h5 class="modal-title" id="quoteModalLabel">Request a Quote</h5>
+                    <h5 class="modal-title text-white" id="quoteModalLabel">Book Appointment</h5>
                     <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
                         aria-label="Close"></button>
                 </div>

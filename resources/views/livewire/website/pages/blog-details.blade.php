@@ -36,7 +36,7 @@
                             <div class="d-flex mb-3">
                                 <img class="img-fluid" src="{{ Storage::url($recentBlog->blog_image) }}"
                                     style="width: 100px; height: 100px; object-fit: cover;" alt="">
-                                <a href=""
+                                <a href="{{ route('blog-details', $recentBlog->blog_slug) }}"
                                     class="h6 d-flex align-items-center bg-white text-uppercase px-3 mb-0">
                                     {{ $recentBlog->blog_title }}
                                 </a>

@@ -32,7 +32,7 @@
                                 </div>
                             </div>
                             <h5 class="text-uppercase mb-3">{{ substr($blog->blog_title, 0, 40) }}...</h5>
-                            <a class="text-uppercase fw-bold" href="">Read More <i
+                            <a class="text-uppercase fw-bold" href="{{ route('blog-details', $blog->blog_slug) }}">Read More <i
                                     class="bi bi-arrow-right"></i></a>
                         </div>
                     </div>

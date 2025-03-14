@@ -212,7 +212,7 @@
                                     class="fa fa-angle-right me-2"></i>Blogs</a>
                             <a class="text-white-50" href="{{ route('contact-us') }}"><i
                                     class="fa fa-angle-right me-2"></i>Contact Us</a>
-                            <a class="text-white-50" href="{{ route('login') }}"><i
+                            <a class="text-white-50 mt-1" href="{{ route('login') }}"><i
                                     class="fa fa-angle-right me-2"></i>Login</a>
                         </div>
                     </div>

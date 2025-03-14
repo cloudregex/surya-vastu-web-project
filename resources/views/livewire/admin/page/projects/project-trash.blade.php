@@ -3,6 +3,7 @@
     :arrayThead="[
         ['th' => 'Sr.No'],
         ['th' => 'Title', 'sort' => 'project_title'],
+        ['th' => 'Location', 'sort' => 'project_location'],
         ['th' => 'Project User', 'sort' => 'project_user_name'],
         ['th' => 'Date', 'sort' => 'project_date'],
         ['th' => 'Image', 'sort' => 'project_image'],
@@ -13,11 +14,12 @@
             <tr>
                 <td>{{ $key + 1 }}</td>
                 <td>{{ $item->project_title }}</td>
+                <td>{{ $item->project_location }}</td>
                 <td>{{ $item->project_user_name }}</td>
                 <td>{{ format_date($item->project_date, 'short') }}</td>
                 <td>
                     @if ($item->project_image)
-                        <img src="{{ asset('storage/' . $item->project_image) }}" alt="Side Bar Image"
+                        <img src="{{ asset('storage/' . $item->project_image) }}" alt="Project Image"
                             style="width: 100px; height: auto;">
                     @else
                         No Image

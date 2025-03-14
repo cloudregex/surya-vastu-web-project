@@ -20,6 +20,7 @@ return new class extends Migration
             $table->string('project_date');
             $table->string('project_slug');
             $table->integer('project_sequence')->default(0);
+            $table->string('project_location')->nullable();
             $table->softDeletes();
             $table->timestamps();
         });

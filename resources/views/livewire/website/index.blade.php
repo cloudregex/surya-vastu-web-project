@@ -227,6 +227,8 @@
                             <p class="h4 text-uppercase">{{ $project->project_title }}</p>
                             <span class="text-body"><i
                                     class="fa fa-calendar text-primary me-2"></i>{{ $project->project_date }}</span>
+                            <span class="text-body d-block mt-1"><i
+                                    class="fa fa-map-marker text-primary me-2"></i>{{ $project->project_location }}</span>
                         </a>
                         <a class="portfolio-btn" href="{{ asset('storage/' . $project->project_image) }}"
                             data-lightbox="portfolio">

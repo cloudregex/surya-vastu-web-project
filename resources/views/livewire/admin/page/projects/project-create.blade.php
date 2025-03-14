@@ -1,9 +1,11 @@
 <x-card-comp listRoute="admin.projects.list" listButtonName="Go to Project List" title="Create Project">
     <x-slot name="CardBody">
         <div class="row">
-            <x-input type="text" placeholder="Enter Project Title" col="6" name="columns.project_title"
+            <x-input type="text" placeholder="Enter Project Title" col="4" name="columns.project_title"
                 value="" label="Title" />
-            <x-input type="text" placeholder="Enter Project Author Name" col="6"
+            <x-input type="text" placeholder="Enter Project Location" col="4" name="columns.project_location"
+                value="" label="Project Location" />
+            <x-input type="text" placeholder="Enter Project Author Name" col="4"
                 name="columns.project_user_name" value="" label="Project Author" />
             <x-date-pick placeholder="Select Date" id="12" col="4" name="columns.project_date"
                 value="{{ $columns['project_date'] }}" label="Date" />

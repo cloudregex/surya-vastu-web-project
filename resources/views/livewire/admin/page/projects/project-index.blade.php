@@ -3,6 +3,7 @@
     :sortDir="$sortDir" :array="$Project" :arrayThead="[
         ['th' => 'Sr.No'],
         ['th' => 'Title', 'sort' => 'project_title'],
+        ['th' => 'Location', 'sort' => 'project_location'],
         ['th' => 'Project User', 'sort' => 'project_user_name'],
         ['th' => 'Date', 'sort' => 'project_date'],
         ['th' => 'Image', 'sort' => 'project_image'],
@@ -12,9 +13,13 @@
         <div class="row">
             <x-input type="text" placeholder="Enter Project Title" col="6" name="filters.project_title"
                 value="{{ $filters['project_title'] }}" label="Title" modelOn='true' />
-            <x-input type="text" placeholder="Enter Project Auther Name" col="6"
-                name="filters.project_user_name" value="{{ $filters['project_user_name'] }}" label="Project Auther"
+            <x-input type="text" placeholder="Enter Project Location" col="6" name="filters.project_location"
+                value="{{ $filters['project_location'] }}" label="Location" modelOn='true' />
+            <x-input type="text" placeholder="Enter Project Author Name" col="6"
+                name="filters.project_user_name" value="{{ $filters['project_user_name'] }}" label="Project Author"
                 modelOn='true' />
+            <x-date-pick placeholder="Select Date" col="6" name="filters.project_date"
+                value="{{ $filters['project_date'] }}" label="Date" modelOn='true' />
         </div>
     </x-slot>
     <x-slot name="tbody">
@@ -22,6 +27,7 @@
             <tr>
                 <td>{{ $key + 1 }}</td>
                 <td>{{ $item->project_title }}</td>
+                <td>{{ $item->project_location }}</td>
                 <td>{{ $item->project_user_name }}</td>
                 <td>{{ format_date($item->project_date, 'short') }}</td>
                 <td>

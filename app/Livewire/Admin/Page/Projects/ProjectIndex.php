@@ -27,6 +27,8 @@ class ProjectIndex extends Component
     public $filters = [
         'project_title' => null,
         'project_user_name' => null,
+        'project_location' => null,
+        'project_date' => null
     ];
 
     public function setSortBy($sortField)
@@ -82,13 +84,20 @@ class ProjectIndex extends Component
         $Project = Project::query()
             ->when($this->Search, function ($query) {
                 $query->where('project_title', 'like', '%' . $this->Search . '%')
-                    ->orWhere('project_user_name', 'like', '%' . $this->Search . '%');
+                    ->orWhere('project_user_name', 'like', '%' . $this->Search . '%')
+                    ->orWhere('project_location', 'like', '%' . $this->Search . '%');
             })
             ->when($this->filters['project_title'], function ($query) {
                 $query->where('project_title', 'like', '%' . $this->filters['project_title'] . '%');
             })
             ->when($this->filters['project_user_name'], function ($query) {
                 $query->where('project_user_name', 'like', '%' . $this->filters['project_user_name'] . '%');
+            })
+            ->when($this->filters['project_user_name'], function ($query) {
+                $query->where('project_user_name', 'like', '%' . $this->filters['project_user_name'] . '%');
+            })
+            ->when($this->filters['project_date'], function ($query) {
+                $query->where('project_date',  $this->filters['project_date']);
             })
             ->orderBy($this->sortBy, $this->sortDir)
             ->paginate($this->perPage);

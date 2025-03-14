@@ -19,6 +19,10 @@
                     <img class="img-thumbnail w-100 rounded mb-5" src="{{ Storage::url($project->project_image) }}"
                         style="height: 500px;" alt="">
                     <h1 class="text-uppercase mb-4">{{ $project->project_title }}</h1>
+                    <div class="d-flex align-items-center mb-4">
+                        <i class="fa fa-map-marker-alt text-primary me-3"></i>
+                        <p class="mb-0">{{ $project->project_location }}</p>
+                    </div>
                     <p>{!! $project->project_description !!}</p>
                 </div>
                 <!-- Blog Detail End -->

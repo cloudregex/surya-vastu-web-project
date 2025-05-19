@@ -14,10 +14,10 @@
     <div class="container-fluid py-6 px-sm-5">
         <div class="row ">
             <div class="col-lg-7">
-                <h1 class="display-5 text-uppercase mb-4">We are <span class="text-primary">Surya Vastu</span>
+                <h1 class="display-5 text-uppercase mb-4">We are <span class="text-primary">Suryya Vastu</span>
                 </h1>
                 <h4 class="text-uppercase mb-3 text-body">Creating Harmonious Spaces Since 2010</h4>
-                <p class="mb-4">Surya Vastu has established itself as a trusted name in Vastu consultation and
+                <p class="mb-4">Suryya Vastu has established itself as a trusted name in Vastu consultation and
                     architectural solutions. Based in Pune, we have successfully helped numerous clients achieve balance
                     and prosperity in their homes and businesses.</p>
 

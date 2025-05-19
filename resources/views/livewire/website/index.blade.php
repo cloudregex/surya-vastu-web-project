@@ -56,7 +56,7 @@
                 <h1 class="display-5 text-uppercase mb-4">Expert <span class="text-primary">Vastu</span> Consultation
                 </h1>
                 <h4 class="text-uppercase mb-3 text-body">Creating Harmonious Living and Working Spaces</h4>
-                <p>At Surya Vastu, we combine ancient Vastu principles with modern architectural solutions to create
+                <p>At Suryya Vastu, we combine ancient Vastu principles with modern architectural solutions to create
                     spaces that promote positivity, prosperity, and well-being. Our expertise in Vastu Shastra has
                     helped numerous clients achieve balance in their lives.</p>
                 <div class="row  py-2">

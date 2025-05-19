@@ -3,10 +3,10 @@
 
 <head>
     <meta charset="utf-8">
-    <title>{{ $title ?? 'Page Title' }} | Surya Vastu</title>
+    <title>{{ $title ?? 'Page Title' }} | Suryya Vastu</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="Vastu, Construction, Architecture, Vastu Consultant Baramati,Vastu Consultant Pune" name="keywords">
-    <meta content="Surya Vastu - Expert Vastu Consultation and Architectural Solutions" name="description">
+    <meta content="Suryya Vastu - Expert Vastu Consultation and Architectural Solutions" name="description">
     <meta name="google-site-verification" content="UgMpJS5YruMnxAp3cUaM3SGBXurCAy0sl9ar0bT2A0k" />
     <!-- Livewire Styles -->
     @livewireStyles
@@ -77,9 +77,9 @@
 <body>
     <!-- Loader -->
     <div id="loader">
-        <img src="{{ asset('website/img/logo.jpg') }}" alt="Surya Vastu">
+        <img src="{{ asset('website/img/logo.jpg') }}" alt="Suryya Vastu">
         <div class="loader-text">
-            <h5>Surya Vastu</h5>
+            <h5>Suryya Vastu</h5>
             <small>Vastu Consultant</small>
         </div>
         <div class="loading-line"></div>
@@ -125,9 +125,9 @@
         <nav class="navbar navbar-expand-lg bg-dark bg-light-radial navbar-dark py-2 py-lg-0">
             <a href="{{ route('index') }}" class="navbar-brand">
                 <div class="d-flex align-items-center">
-                   <img height="50" width="50" src="{{asset('website/img/logo.jpg')}}" alt="Surya Vastu"/>
+                   <img height="50" width="50" src="{{asset('website/img/logo.jpg')}}" alt="Suryya Vastu"/>
                    <div>
-                    <h5 class="m-0 text-uppercase text-white">Surya Vastu</h5>
+                    <h5 class="m-0 text-uppercase text-white">Suryya Vastu</h5>
                     <small>Vastu Consultant</small>
                    </div>
                 </div>
@@ -167,9 +167,9 @@
             <div class="col-lg-6 pe-lg-5">
                 <a href="{{ route('index') }}" class="navbar-brand">
                     <div class="d-flex align-items-center">
-                       <img height="80" width="80" src="{{asset('website/img/logo.jpg')}}" alt="Surya Vastu"/>
+                       <img height="80" width="80" src="{{asset('website/img/logo.jpg')}}" alt="Suryya Vastu"/>
                        <div>
-                        <h5 class="m-0 text-uppercase text-white">Surya Vastu</h5>
+                        <h5 class="m-0 text-uppercase text-white">Suryya Vastu</h5>
                         <small class="text-white">Vastu Consultant</small>
                        </div>
                     </div>
@@ -183,11 +183,11 @@
                 <p><i class="fa fa-envelope me-2"></i><a href="mailto:suryavastu6147@gmail.com"
                         class="text-white-50">suryavastu6147@gmail.com</a></p>
                 <div class="d-flex justify-content-start mt-4">
-                    <a class="btn btn-lg btn-primary btn-lg-square rounded-0 me-2" href="https://www.facebook.com/share/15uroGRxhY/"><i
+                    <a class="btn btn-lg btn-primary btn-lg-square rounded-0 me-2" href="https://www.facebook.com/share/15uroGRxhY/" target="_blank"><i
                             class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-lg btn-primary btn-lg-square rounded-0 me-2" href="https://g.page/r/CfkZJ6GvYSJBEBM/review"><i
+                    <a class="btn btn-lg btn-primary btn-lg-square rounded-0 me-2" href="https://g.page/r/CfkZJ6GvYSJBEBM/review" target="_blank"><i
                             class="fab fa-google"></i></a>
-                    <a class="btn btn-lg btn-primary btn-lg-square rounded-0" href="https://www.instagram.com/_suryavastu_6147/"><i
+                    <a class="btn btn-lg btn-primary btn-lg-square rounded-0" href="https://www.instagram.com/_suryavastu_6147/" target="_blank"><i
                             class="fab fa-instagram"></i></a>
                 </div>
             </div>
@@ -235,7 +235,7 @@
     <div class="container-fluid bg-dark bg-light-radial text-white border-top border-primary px-0">
         <div class="d-flex flex-column flex-md-row justify-content-between">
             <div class="py-4 px-5 text-center text-md-start">
-                <p class="mb-0">&copy; <a class="text-primary" href="https://suryavastu.com">Surya Vastu</a>. All Rights
+                <p class="mb-0">&copy; <a class="text-primary" href="https://suryavastu.com">Suryya Vastu</a>. All Rights
                     Reserved.</p>
             </div>
             <div class="py-4 px-5 bg-primary footer-shape position-relative text-center text-md-end">
